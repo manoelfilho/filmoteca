@@ -1,0 +1,15 @@
+{
+  "originHash" : "677e41dc334e8047e45e45ab1db4e6d55f4d573481b0a688236926d441b27516",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "bda9ed57d72988a3a2ada33d824583541f86eac6",
+        "version" : "5.12.2"
+      }
+    }
+  ],
+  "version" : 3
+}

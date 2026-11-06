@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TMDB_URL</key>
+	<string>${TMDB_URL}</string>
+	<key>TMDB_KEY</key>
+	<string>${TMDB_KEY}</string>
+	<key>WATCH_MODE_URL</key>
+	<string>${WATCH_MODE_URL}</string>
+	<key>WATCH_MODE_KEY</key>
+	<string>${WATCH_MODE_KEY}</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>O SuperApp se conecta à sua TV na rede Wi-Fi para abrir filmes nela.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

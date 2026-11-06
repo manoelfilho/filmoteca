@@ -1,0 +1,1948 @@
+{
+  "sourceLanguage" : "pt-BR",
+  "strings" : {
+    "·" : {
+
+    },
+    "%@, %lld" : {
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$lld"
+          }
+        }
+      }
+    },
+    "common_cancel" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
+    "common_close" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fechar"
+          }
+        }
+      }
+    },
+    "common_retry" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tentar novamente"
+          }
+        }
+      }
+    },
+    "common_save" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvar"
+          }
+        }
+      }
+    },
+    "home_destination_design_system" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Design System"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Design System"
+          }
+        }
+      }
+    },
+    "home_destination_design_system_subtitle" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visual tokens and components"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tokens e componentes visuais"
+          }
+        }
+      }
+    },
+    "home_destination_splash" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Splash"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Splash"
+          }
+        }
+      }
+    },
+    "home_destination_splash_subtitle" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App launch animation"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animação de abertura do app"
+          }
+        }
+      }
+    },
+    "home_destination_tmdb" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TMDB"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TMDB"
+          }
+        }
+      }
+    },
+    "home_destination_tmdb_subtitle" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Movies from The Movie Database"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filmes do The Movie Database"
+          }
+        }
+      }
+    },
+    "home_section_explore" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explorar"
+          }
+        }
+      }
+    },
+    "home_title" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início"
+          }
+        }
+      }
+    },
+    "SuperApp" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SupperApp"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SupperApp"
+          }
+        }
+      }
+    },
+    "tmdb_about_apis_body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filmoteca is free: no subscription, no ads, no in-app purchases and no sign-up.\n\nAll of its information comes from public third-party APIs:\n• TMDB: movies, ratings, genres, images and which services carry each title.\n• Watchmode: each title's links on the streaming services, used to open the movie on your TV.\n\nTo use these APIs, each person must generate their own access key by creating a free account on each service's website, and set it in the Filmoteca project before building the app. Keys are personal and subject to each provider's limits and rules. Watchmode's free plan, for example, allows a limited number of requests per month, and some direct links are reserved for paid plans.\n\nBecause the data comes from these services, it may be incomplete, out of date or vary by country. Filmoteca uses the TMDB API but is not endorsed or certified by TMDB."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Filmoteca é gratuito: não tem assinatura, anúncios nem compras dentro do app, e não pede cadastro.\n\nTodas as informações vêm de APIs públicas de terceiros:\n• TMDB: filmes, notas, gêneros, imagens e em quais serviços cada título está disponível.\n• Watchmode: os links de cada título nos serviços de streaming, usados para abrir o filme na TV.\n\nPara usar essas APIs, cada pessoa precisa gerar a sua própria chave de acesso, criando uma conta gratuita no site de cada serviço, e configurá-la no projeto do Filmoteca antes de compilar o app. As chaves são pessoais e seguem os limites e as regras de cada provedor. No plano gratuito do Watchmode, por exemplo, há um número limitado de consultas por mês, e alguns links diretos ficam restritos aos planos pagos.\n\nComo os dados vêm desses serviços, eles podem estar incompletos, desatualizados ou variar de acordo com o país. O Filmoteca usa a API do TMDB, mas não é endossado nem certificado pelo TMDB."
+          }
+        }
+      }
+    },
+    "tmdb_about_apis_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free, built on public APIs"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratuito e com APIs públicas"
+          }
+        }
+      }
+    },
+    "tmdb_about_app_body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filmoteca helps you discover movies, save your favorites and see which streaming services carry each title. If you have a compatible TV on the same network, it can also open the movie right on it.\n\nThe app doesn't host or stream any movie. It organizes public information and takes you to the service where the title is available."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Filmoteca é um app para descobrir filmes, salvar seus favoritos e ver em quais serviços de streaming cada título está disponível. Se você tiver uma TV compatível na mesma rede, ele também abre o filme direto nela.\n\nO app não hospeda nem transmite nenhum filme: ele organiza informações públicas e leva você até o serviço onde o título está."
+          }
+        }
+      }
+    },
+    "tmdb_about_app_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What Filmoteca is"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que é o Filmoteca"
+          }
+        }
+      }
+    },
+    "tmdb_about_footer %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filmoteca · version %@\nMovie data provided by TMDB."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filmoteca · versão %@\nDados de filmes fornecidos pelo TMDB."
+          }
+        }
+      }
+    },
+    "tmdb_about_privacy_body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorites, paired TVs and your profile (name and photo) are stored only on this device. Filmoteca has no server of its own and no account: searches go straight to the TMDB and Watchmode APIs, and TV commands go straight to the TV over your local network."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritos, TVs pareadas e o seu perfil (nome e foto) ficam salvos apenas neste aparelho. O Filmoteca não tem servidor próprio nem conta: as buscas vão direto para as APIs do TMDB e do Watchmode, e os comandos para a TV vão direto para ela, pela sua rede local."
+          }
+        }
+      }
+    },
+    "tmdb_about_privacy_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your data"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seus dados"
+          }
+        }
+      }
+    },
+    "tmdb_about_ratings_body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ratings come from the TMDB (The Movie Database) community. Anyone with a TMDB account can rate a movie from 0.5 to 10, and the rating shown is the average of every vote the movie has received since it was added. It isn't a daily or weekly average: it changes gradually, whenever someone votes.\n\nNext to the rating you'll see the number of votes. It tells you how reliable the rating is: an 8.5 backed by thousands of votes says much more than an 8.5 from a few dozen people.\n\nOn the Home tab you choose how movies are ordered:\n• Popular now: the movies drawing the most interest in recent days (page views, votes and lists on TMDB). It changes every day.\n• Most voted: the movies with the largest total number of votes. It favors well-known titles that have been in the catalog longer.\n\nFilmoteca only displays these results. You can't vote in the app, and nothing you do here changes the ratings. To rate a movie, use the official TMDB website or app."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As notas vêm da comunidade do TMDB (The Movie Database). Qualquer pessoa com conta no TMDB pode dar uma nota de 0,5 a 10 a um filme, e a nota exibida é a média de todos os votos que ele já recebeu desde que foi cadastrado. Não é uma média diária nem semanal: ela muda aos poucos, sempre que alguém vota.\n\nAo lado da nota aparece a quantidade de votos. Ela mostra o quanto a nota é confiável: um 8,5 com milhares de votos diz muito mais do que um 8,5 dado por poucas dezenas de pessoas.\n\nNa aba Início, você escolhe a ordem dos filmes:\n• Em alta: os filmes com mais interesse nos últimos dias (visitas, votos e listas no TMDB). Muda todos os dias.\n• Mais votados: os filmes com o maior número de votos acumulados. Favorece títulos conhecidos e que estão há mais tempo no catálogo.\n\nO Filmoteca apenas exibe esses resultados. Não é possível votar pelo app, e nada do que você faz aqui altera as notas. Para avaliar um filme, use o site ou o app oficial do TMDB."
+          }
+        }
+      }
+    },
+    "tmdb_about_ratings_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How ratings work"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como funcionam as notas"
+          }
+        }
+      }
+    },
+    "tmdb_about_tv_body" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch on TV works only with Samsung (Tizen) and LG (webOS) TVs. The TV must be on and connected to the same Wi-Fi network as your iPhone, and the first time you connect, it asks you on screen to allow the pairing.\n\nThe connection uses the remote control protocols these TVs expose on the local network, the same ones remote control apps use. They aren't official, documented APIs for third-party apps, and not all of them give Filmoteca full access:\n• Some models don't report which apps are installed.\n• Some ignore the request to open an app, or don't confirm whether it opened.\n• Opening a movie straight on its title page depends on each streaming service. When that isn't possible, the service's app opens on its home screen and you pick the movie with the TV remote.\n\nThese limits exist for commercial and security reasons. Streaming services control how, and by whom, their apps can be opened, and many reserve that access for partners under contract. TV makers, in turn, restrict what other devices on the network can do, require approval on screen and, on newer models, accept only encrypted connections. That's why behavior can vary between models and change with TV software updates."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O recurso Assistir na TV funciona apenas com TVs Samsung (sistema Tizen) e LG (sistema webOS). A TV precisa estar ligada e na mesma rede Wi-Fi que o iPhone, e na primeira conexão ela pede, na própria tela, que você autorize o pareamento.\n\nA conexão usa os protocolos de controle remoto que essas TVs oferecem na rede local, os mesmos usados por apps de controle remoto. Eles não são APIs oficiais e documentadas para apps de terceiros, e nem todos dão acesso completo ao Filmoteca:\n• Alguns modelos não informam quais apps estão instalados.\n• Alguns ignoram o pedido para abrir um app, ou não confirmam se ele abriu.\n• Abrir o filme direto na página do título depende de cada serviço de streaming. Quando isso não é possível, o app do serviço abre na tela inicial e você escolhe o filme com o controle da TV.\n\nEssas limitações têm motivos comerciais e de segurança. Os serviços de streaming controlam como, e por quem, os seus apps podem ser abertos, e muitos reservam esse acesso a parceiros com contrato. Os fabricantes, por sua vez, restringem o que outros aparelhos da rede podem fazer na TV, exigem autorização na tela e, nos modelos mais novos, aceitam apenas conexões criptografadas. Por isso, o funcionamento pode variar entre modelos e mudar com as atualizações do sistema da TV."
+          }
+        }
+      }
+    },
+    "tmdb_about_tv_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watching on your TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistir na TV"
+          }
+        }
+      }
+    },
+    "tmdb_detail_available_on" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Available on"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disponível em"
+          }
+        }
+      }
+    },
+    "tmdb_detail_budget" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Budget"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orçamento"
+          }
+        }
+      }
+    },
+    "tmdb_detail_cast" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cast"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elenco"
+          }
+        }
+      }
+    },
+    "tmdb_detail_directed_by %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Directed by %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direção: %@"
+          }
+        }
+      }
+    },
+    "tmdb_detail_favorite" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar aos favoritos"
+          }
+        }
+      }
+    },
+    "tmdb_detail_info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações"
+          }
+        }
+      }
+    },
+    "tmdb_detail_no_overview" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No overview available."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sinopse indisponível."
+          }
+        }
+      }
+    },
+    "tmdb_detail_original_language" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Original language"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma original"
+          }
+        }
+      }
+    },
+    "tmdb_detail_original_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Original title"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título original"
+          }
+        }
+      }
+    },
+    "tmdb_detail_overview" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overview"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sinopse"
+          }
+        }
+      }
+    },
+    "tmdb_detail_production" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Production"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Produção"
+          }
+        }
+      }
+    },
+    "tmdb_detail_recommendations" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You might also like"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você também pode gostar"
+          }
+        }
+      }
+    },
+    "tmdb_detail_release_date" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Release date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lançamento"
+          }
+        }
+      }
+    },
+    "tmdb_detail_rent_or_buy" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rent or buy"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alugar ou comprar"
+          }
+        }
+      }
+    },
+    "tmdb_detail_revenue" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Box office"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilheteria"
+          }
+        }
+      }
+    },
+    "tmdb_detail_runtime" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Runtime"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duração"
+          }
+        }
+      }
+    },
+    "tmdb_detail_status" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Status"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Situação"
+          }
+        }
+      }
+    },
+    "tmdb_detail_unfavorite" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove from favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover dos favoritos"
+          }
+        }
+      }
+    },
+    "tmdb_detail_watch_trailer" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailer"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailer"
+          }
+        }
+      }
+    },
+    "tmdb_detail_where_to_watch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Where to watch"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onde assistir"
+          }
+        }
+      }
+    },
+    "tmdb_error_connectivity" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No internet connection. Check your network and try again."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem conexão com a internet. Verifique sua rede e tente novamente."
+          }
+        }
+      }
+    },
+    "tmdb_error_generic" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Something went wrong. Please try again shortly."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algo deu errado. Tente novamente em instantes."
+          }
+        }
+      }
+    },
+    "tmdb_error_storage" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t access the movies saved on this device."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível acessar os filmes salvos neste aparelho."
+          }
+        }
+      }
+    },
+    "tmdb_error_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t load"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar"
+          }
+        }
+      }
+    },
+    "tmdb_error_unauthorized" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your TMDB API key."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique a chave da API do TMDB."
+          }
+        }
+      }
+    },
+    "tmdb_favorites_count %lld" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld saved movie"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld saved movies"
+                }
+              }
+            }
+          }
+        },
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld filme salvo"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld filmes salvos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tmdb_favorites_empty_description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the heart on a movie’s page to save it here."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque no coração na página de um filme para salvá-lo aqui."
+          }
+        }
+      }
+    },
+    "tmdb_favorites_empty_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum favorito"
+          }
+        }
+      }
+    },
+    "tmdb_genre_all" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos"
+          }
+        }
+      }
+    },
+    "tmdb_genre_empty_description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There are no movies of this type with the current filters. Pick another type or change the sort order."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não há filmes deste tipo com os filtros atuais. Escolha outro tipo ou mude a ordenação."
+          }
+        }
+      }
+    },
+    "tmdb_genre_empty_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No movies found"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nenhum filme encontrado"
+          }
+        }
+      }
+    },
+    "tmdb_home_filter" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filter"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrar"
+          }
+        }
+      }
+    },
+    "tmdb_home_filter_limit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum results"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quantidade máxima"
+          }
+        }
+      }
+    },
+    "tmdb_home_filter_limit_option %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld titles"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld filmes"
+          }
+        }
+      }
+    },
+    "tmdb_home_filter_sort" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sort by"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ordenar por"
+          }
+        }
+      }
+    },
+    "tmdb_home_ranking_popularity" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular now"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em alta"
+          }
+        }
+      }
+    },
+    "tmdb_home_shelf_most_voted" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Most voted"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais votados"
+          }
+        }
+      }
+    },
+    "tmdb_loading" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregando"
+          }
+        }
+      }
+    },
+    "tmdb_movie_votes %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ votes"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ votos"
+          }
+        }
+      }
+    },
+    "tmdb_offer_buy" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compra"
+          }
+        }
+      }
+    },
+    "tmdb_offer_free" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grátis"
+          }
+        }
+      }
+    },
+    "tmdb_offer_rent" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rent"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aluguel"
+          }
+        }
+      }
+    },
+    "tmdb_offer_subscription" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura"
+          }
+        }
+      }
+    },
+    "tmdb_offer_tv_provider" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With TV provider"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com operadora de TV"
+          }
+        }
+      }
+    },
+    "tmdb_profile_add_name" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add your name"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar nome"
+          }
+        }
+      }
+    },
+    "tmdb_profile_choose_photo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose photo"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher foto"
+          }
+        }
+      }
+    },
+    "tmdb_profile_edit_hint" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edits your profile photo and name"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edita a foto e o nome do perfil"
+          }
+        }
+      }
+    },
+    "tmdb_profile_name" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
+        }
+      }
+    },
+    "tmdb_profile_name_placeholder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What should we call you?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como você quer ser chamado?"
+          }
+        }
+      }
+    },
+    "tmdb_profile_privacy_note" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS doesn't share your Apple Account photo or name with apps, so choose here how you want to appear. This information is stored only on this device."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O iOS não compartilha a foto nem o nome do seu ID Apple com os apps. Por isso, escolha aqui como você quer aparecer. Essas informações ficam salvas apenas neste aparelho."
+          }
+        }
+      }
+    },
+    "tmdb_profile_remove_photo" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover"
+          }
+        }
+      }
+    },
+    "tmdb_profile_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perfil"
+          }
+        }
+      }
+    },
+    "tmdb_search_empty_description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type a movie title in Portuguese or English."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digite o nome de um filme em português ou inglês."
+          }
+        }
+      }
+    },
+    "tmdb_search_empty_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for a movie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busque um filme"
+          }
+        }
+      }
+    },
+    "tmdb_search_prompt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search movies"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar filmes"
+          }
+        }
+      }
+    },
+    "tmdb_search_results_count %lld" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld result"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld results"
+                }
+              }
+            }
+          }
+        },
+        "pt-BR" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld resultado"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld resultados"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tmdb_search_results_title %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@”"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@”"
+          }
+        }
+      }
+    },
+    "tmdb_status_canceled" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Canceled"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelado"
+          }
+        }
+      }
+    },
+    "tmdb_status_in_production" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In production"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Em produção"
+          }
+        }
+      }
+    },
+    "tmdb_status_planned" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planned"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planejado"
+          }
+        }
+      }
+    },
+    "tmdb_status_post_production" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Post-production"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pós-produção"
+          }
+        }
+      }
+    },
+    "tmdb_status_released" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Released"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lançado"
+          }
+        }
+      }
+    },
+    "tmdb_status_rumored" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rumored"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rumor"
+          }
+        }
+      }
+    },
+    "tmdb_status_unknown" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desconhecido"
+          }
+        }
+      }
+    },
+    "tmdb_streaming_unavailable" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not streaming"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fora do streaming"
+          }
+        }
+      }
+    },
+    "tmdb_tab_about" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre"
+          }
+        }
+      }
+    },
+    "tmdb_tab_favorites" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favoritos"
+          }
+        }
+      }
+    },
+    "tmdb_tab_home" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início"
+          }
+        }
+      }
+    },
+    "tmdb_tab_search" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Busca"
+          }
+        }
+      }
+    },
+    "tmdb_tv_add" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add another TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar outra TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_connect" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conectar"
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_app_missing %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The %@ app isn’t installed on the TV."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O app %@ não está instalado na TV."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_generic" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The TV couldn’t open the movie. Try again."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A TV não conseguiu abrir o filme. Tente de novo."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_invalid_host" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the TV IP address, like 192.168.0.20."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informe o IP da TV, como 192.168.0.20."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_not_paired" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The TV no longer recognizes this app. Connect it again."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A TV não reconhece mais este app. Conecte de novo."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_rejected" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The connection was declined on the TV."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A conexão foi recusada na TV."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_timeout" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No one accepted the request on the TV. Try again."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ninguém aceitou o pedido na TV. Tente de novo."
+          }
+        }
+      }
+    },
+    "tmdb_tv_error_unreachable" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t reach the TV. Check that it’s on, on the same Wi-Fi, and that SuperApp can access the local network (Settings › Privacy › Local Network)."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível falar com a TV. Confira se ela está ligada, na mesma rede Wi-Fi, e se o SuperApp pode acessar a rede local (Ajustes › Privacidade › Rede Local)."
+          }
+        }
+      }
+    },
+    "tmdb_tv_forget" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forget this TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esquecer esta TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_ip_hint" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find the IP on the TV — LG: Settings › Network › Wi-Fi connection › Advanced settings. Samsung: Settings › General › Network › Network status › IP settings."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veja o IP na TV — LG: Configurações › Rede › Conexão Wi-Fi › Configurações avançadas. Samsung: Configurações › Geral › Rede › Status da rede › Configurações de IP."
+          }
+        }
+      }
+    },
+    "tmdb_tv_ip_label" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TV IP address"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endereço IP da TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_no_offers" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This movie isn’t available on any streaming service in your region."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este filme não está em nenhum streaming na sua região."
+          }
+        }
+      }
+    },
+    "tmdb_tv_open_hint" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opens the movie on the TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre o filme na TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_opened_app %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ opened on the TV. If it asks, choose the profile with the TV remote, then search for “%2$@”."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ aberto na TV. Se pedir, escolha o perfil com o controle da TV e procure por “%2$@”."
+          }
+        }
+      }
+    },
+    "tmdb_tv_opened_content %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opening on the TV in %@. If it asks, choose the profile with the TV remote."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrindo na TV, no %@. Se pedir, escolha o perfil com o controle da TV."
+          }
+        }
+      }
+    },
+    "tmdb_tv_options" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TV options"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opções da TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_pair_description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect to an LG (webOS) or Samsung (Tizen) TV on the same Wi-Fi network as this device."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conecte-se a uma TV LG (webOS) ou Samsung (Tizen) na mesma rede Wi-Fi deste aparelho."
+          }
+        }
+      }
+    },
+    "tmdb_tv_pair_first" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect a TV above to open the movie on it."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conecte uma TV acima para abrir o filme nela."
+          }
+        }
+      }
+    },
+    "tmdb_tv_pairing_prompt" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accept the request on the TV screen (on Samsung TVs, choose “Allow”)."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceite o pedido na tela da TV (na Samsung, escolha “Permitir”)."
+          }
+        }
+      }
+    },
+    "tmdb_tv_section_streaming" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the streaming service"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha o streaming"
+          }
+        }
+      }
+    },
+    "tmdb_tv_section_tv" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sua TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_switch" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trocar de TV"
+          }
+        }
+      }
+    },
+    "tmdb_tv_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Watch on TV"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistir na TV"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}
