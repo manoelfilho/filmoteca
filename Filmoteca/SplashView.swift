@@ -22,7 +22,7 @@ struct SplashView: View {
                     .frame(width: 96, height: 96)
                     .foregroundStyle(DSColor.onPrimary)
 
-                Text("SuperApp")
+                Text(verbatim: "Filmoteca")
                     .font(DSFont.display)
                     .foregroundStyle(DSColor.onPrimary)
             }

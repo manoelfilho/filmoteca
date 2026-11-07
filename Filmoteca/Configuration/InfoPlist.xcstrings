@@ -32,13 +32,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "SuperApp connects to your TV over Wi-Fi to open movies on it."
+            "value" : "Filmoteca connects to your TV over Wi-Fi to open movies on it."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O SuperApp se conecta à sua TV na rede Wi-Fi para abrir filmes nela."
+            "value" : "O Filmoteca se conecta à sua TV na rede Wi-Fi para abrir filmes nela."
           }
         }
       }

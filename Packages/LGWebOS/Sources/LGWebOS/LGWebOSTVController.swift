@@ -15,7 +15,11 @@ public actor LGWebOSTVController {
     public init(pairingTimeout: Duration = .seconds(60)) {
         self.init(
             socketFactory: WebSocketLGWebOSSocketFactory(),
-            storage: KeychainTVPairingStore(service: "SuperApp.LGWebOS"),
+            storage: KeychainTVPairingStore(
+                service: "Filmoteca.LGWebOS",
+                // Nome anterior do app: os pareamentos já feitos passam para o novo nome.
+                legacyServices: ["SuperApp.LGWebOS"]
+            ),
             pairingTimeout: pairingTimeout
         )
     }

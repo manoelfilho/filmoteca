@@ -25,7 +25,11 @@ public actor SamsungTizenTVController {
         self.init(
             webSocketClient: URLSessionWebSocketClient(),
             httpClient: httpClient,
-            storage: KeychainTVPairingStore(service: "SuperApp.SamsungTizen"),
+            storage: KeychainTVPairingStore(
+                service: "Filmoteca.SamsungTizen",
+                // Nome anterior do app: os pareamentos já feitos passam para o novo nome.
+                legacyServices: ["SuperApp.SamsungTizen"]
+            ),
             pairingTimeout: pairingTimeout
         )
     }

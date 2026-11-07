@@ -200,4 +200,5 @@ Favoritos, TVs pareadas e o perfil ficam **só no aparelho**. O app não tem ser
 ## 🙏 Créditos
 
 Este produto usa a API do TMDB, mas não é endossado nem certificado pelo TMDB.
+Os dados de onde assistir do TMDB (serviços em que cada filme está disponível) são fornecidos pela [JustWatch](https://www.justwatch.com).
 Disponibilidade e links de streaming fornecidos pela [Streaming Availability API](https://www.movieofthenight.com/about/api), do Movie of the Night.

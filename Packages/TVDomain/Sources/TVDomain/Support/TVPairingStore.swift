@@ -24,14 +24,32 @@ public protocol TVPairingStore: Sendable {
 public struct KeychainTVPairingStore: TVPairingStore {
     public let service: String
     public let account: String
+    /// Nomes antigos do serviço no Keychain. Se o atual ainda não tem nada, os pareamentos
+    /// salvos com um nome antigo passam para o atual (e o item antigo é apagado).
+    public let legacyServices: [String]
 
-    public init(service: String, account: String = "pairings") {
+    public init(service: String, account: String = "pairings", legacyServices: [String] = []) {
         self.service = service
         self.account = account
+        self.legacyServices = legacyServices
     }
 
     public func load() throws -> [TVPairing] {
-        var query = baseQuery
+        if let pairings = try read(service: service) {
+            return pairings
+        }
+        for legacy in legacyServices {
+            guard let pairings = try read(service: legacy) else { continue }
+            try save(pairings)
+            SecItemDelete(Self.query(service: legacy, account: account) as CFDictionary)
+            return pairings
+        }
+        return []
+    }
+
+    /// `nil` quando não há item com esse nome no Keychain.
+    private func read(service: String) throws -> [TVPairing]? {
+        var query = Self.query(service: service, account: account)
         query[kSecReturnData as String] = true
         query[kSecMatchLimit as String] = kSecMatchLimitOne
 
@@ -45,7 +63,7 @@ public struct KeychainTVPairingStore: TVPairingStore {
             }
             return pairings
         case errSecItemNotFound:
-            return []
+            return nil
         default:
             throw TVError.commandFailed("Keychain read failed (\(status))")
         }
@@ -66,6 +84,10 @@ public struct KeychainTVPairingStore: TVPairingStore {
     }
 
     private var baseQuery: [String: Any] {
+        Self.query(service: service, account: account)
+    }
+
+    private static func query(service: String, account: String) -> [String: Any] {
         [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,

@@ -48,7 +48,7 @@ struct SamsungTizenTVControllerTests {
         #expect(url.scheme == "wss")
         #expect(url.port == 8002)
         #expect(url.path() == "/api/v2/channels/samsung.remote.control")
-        #expect(url.query(percentEncoded: false)?.contains("name=U3VwZXJBcHA=") == true)
+        #expect(url.query(percentEncoded: false)?.contains("name=RmlsbW90ZWNh") == true)
     }
 
     @Test("TV antiga: sem porta segura, usa a 8001")

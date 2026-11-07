@@ -214,34 +214,18 @@
         }
       }
     },
-    "SuperApp" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SupperApp"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SupperApp"
-          }
-        }
-      }
-    },
     "tmdb_about_apis_body" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Filmoteca is free: no subscription, no ads, no in-app purchases and no sign-up.\n\nAll of its information comes from public third-party APIs:\n• TMDB: movies, ratings, genres, images and which services carry each title.\n• Streaming Availability (Movie of the Night): each title's links on the streaming services, used to open the movie on your TV.\n\nTo use these APIs, each person must generate their own access key by creating a free account on each service's website, and set it in the Filmoteca project before building the app. Keys are personal and subject to each provider's limits and rules. Streaming Availability's free plan, for example, allows 1,000 requests per month.\n\nBecause the data comes from these services, it may be incomplete, out of date or vary by country. Filmoteca uses the TMDB API but is not endorsed or certified by TMDB."
+            "value" : "Filmoteca is free: no subscription, no ads, no in-app purchases and no sign-up.\n\nAll of its information comes from public third-party APIs:\n• TMDB: movies, ratings, genres, images and which services carry each title.\n• Streaming Availability (Movie of the Night): each title's links on the streaming services, used to open the movie on your TV.\n\nTo use these APIs, each person must generate their own access key by creating a free account on each service's website, and set it in the Filmoteca project before building the app. Keys are personal and subject to each provider's limits and rules. Streaming Availability's free plan, for example, allows 1,000 requests per month.\n\nBecause the data comes from these services, it may be incomplete, out of date or vary by country. Filmoteca uses the TMDB API but is not endorsed or certified by TMDB. Where-to-watch data on TMDB is provided by JustWatch."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O Filmoteca é gratuito: não tem assinatura, anúncios nem compras dentro do app, e não pede cadastro.\n\nTodas as informações vêm de APIs públicas de terceiros:\n• TMDB: filmes, notas, gêneros, imagens e em quais serviços cada título está disponível.\n• Streaming Availability (Movie of the Night): os links de cada título nos serviços de streaming, usados para abrir o filme na TV.\n\nPara usar essas APIs, cada pessoa precisa gerar a sua própria chave de acesso, criando uma conta gratuita no site de cada serviço, e configurá-la no projeto do Filmoteca antes de compilar o app. As chaves são pessoais e seguem os limites e as regras de cada provedor. No plano gratuito do Streaming Availability, por exemplo, são 1.000 consultas por mês.\n\nComo os dados vêm desses serviços, eles podem estar incompletos, desatualizados ou variar de acordo com o país. O Filmoteca usa a API do TMDB, mas não é endossado nem certificado pelo TMDB."
+            "value" : "O Filmoteca é gratuito: não tem assinatura, anúncios nem compras dentro do app, e não pede cadastro.\n\nTodas as informações vêm de APIs públicas de terceiros:\n• TMDB: filmes, notas, gêneros, imagens e em quais serviços cada título está disponível.\n• Streaming Availability (Movie of the Night): os links de cada título nos serviços de streaming, usados para abrir o filme na TV.\n\nPara usar essas APIs, cada pessoa precisa gerar a sua própria chave de acesso, criando uma conta gratuita no site de cada serviço, e configurá-la no projeto do Filmoteca antes de compilar o app. As chaves são pessoais e seguem os limites e as regras de cada provedor. No plano gratuito do Streaming Availability, por exemplo, são 1.000 consultas por mês.\n\nComo os dados vêm desses serviços, eles podem estar incompletos, desatualizados ou variar de acordo com o país. O Filmoteca usa a API do TMDB, mas não é endossado nem certificado pelo TMDB. Os dados de onde assistir do TMDB são fornecidos pela JustWatch."
           }
         }
       }
@@ -1692,13 +1676,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn’t reach the TV. Check that it’s on, on the same Wi-Fi, and that SuperApp can access the local network (Settings › Privacy › Local Network)."
+            "value" : "Couldn’t reach the TV. Check that it’s on, on the same Wi-Fi, and that Filmoteca can access the local network (Settings › Privacy › Local Network)."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Não foi possível falar com a TV. Confira se ela está ligada, na mesma rede Wi-Fi, e se o SuperApp pode acessar a rede local (Ajustes › Privacidade › Rede Local)."
+            "value" : "Não foi possível falar com a TV. Confira se ela está ligada, na mesma rede Wi-Fi, e se o Filmoteca pode acessar a rede local (Ajustes › Privacidade › Rede Local)."
           }
         }
       }

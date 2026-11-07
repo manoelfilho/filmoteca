@@ -6,7 +6,7 @@ import NetworkCore
 /// Protocolo descrito pela comunidade; referência: https://github.com/xchwarze/samsung-tv-ws-api
 enum SamsungTizenMessages {
     /// Nome exibido na TV no pedido de permissão.
-    static let clientName = "SuperApp"
+    static let clientName = "Filmoteca"
 
     /// `wss://host:8002` (TVs de 2018 em diante, com token) ou `ws://host:8001` (anteriores).
     static func remoteControlURL(host: String, secure: Bool, token: String?) -> URL? {
