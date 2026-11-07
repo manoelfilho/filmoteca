@@ -16,7 +16,8 @@ struct SamsungTizenTVControllerTests {
             pairingTimeout: .seconds(1),
             replyTimeout: .seconds(1),
             launchConfirmationTimeout: .milliseconds(10),
-            launchCheckDelay: .zero,
+            launchCheckDelay: .milliseconds(1),
+            launchVisibilityTimeout: .milliseconds(50),
             restRetryDelay: .zero
         )
     }
@@ -158,6 +159,21 @@ struct SamsungTizenTVControllerTests {
     func unconfirmedButRunning() async throws {
         var options = FakeSamsungTV.Options()
         options.confirmsLaunch = false
+        let tv = FakeSamsungTV(options)
+
+        let result = try await makeController(tv, storage: paired()).launchOnTV(
+            TVLaunchRequest(serviceName: "Netflix", webURL: URL(string: "https://www.netflix.com/title/26004747")),
+            on: Self.device
+        )
+        #expect(result == .openedContent)
+        #expect(tv.restLaunches.isEmpty)
+    }
+
+    @Test("App que demora a aparecer na tela: espera em vez de abrir de novo pela API HTTP")
+    func slowAppIsNotRelaunched() async throws {
+        var options = FakeSamsungTV.Options()
+        options.confirmsLaunch = false
+        options.visibleAfterStatusChecks = 3
         let tv = FakeSamsungTV(options)
 
         let result = try await makeController(tv, storage: paired()).launchOnTV(

@@ -28,6 +28,9 @@ final class FakeSamsungTV: WebSocketClient, HTTPClient, @unchecked Sendable {
         var isNoisy = false
         /// Apps rodando em segundo plano desde o início (a Samsung deixa a Netflix assim).
         var backgroundApps: Set<String> = []
+        /// Depois do pedido pelo canal, o app só aparece na tela nesta consulta de estado
+        /// (0 = na hora). Simula a Netflix demorando a abrir.
+        var visibleAfterStatusChecks = 0
         /// A API HTTP recusa conexões (como a TV fez depois de muitas consultas seguidas).
         var restRefuses = false
         var deviceJSON = #"{"type":"Samsung SmartTV","device":{"type":"Samsung SmartTV","name":"[TV] Samsung Q60 Series (55)"}}"#
@@ -43,6 +46,8 @@ final class FakeSamsungTV: WebSocketClient, HTTPClient, @unchecked Sendable {
     private var _httpRequests: [HTTPRequest] = []
     private var runningApps: Set<String> = []
     private var visibleApps: Set<String> = []
+    /// Apps abertos pelo canal que ainda não apareceram na tela, com as consultas que faltam.
+    private var pendingVisible: [String: Int] = [:]
 
     var httpRequests: [HTTPRequest] { lock.withLock { _httpRequests } }
     var restLaunches: [String] { httpRequests.filter { $0.method == .post }.map(\.path) }
@@ -118,7 +123,11 @@ final class FakeSamsungTV: WebSocketClient, HTTPClient, @unchecked Sendable {
         if options.opensAppFromChannel, let appID {
             lock.withLock {
                 _ = runningApps.insert(appID)
-                _ = visibleApps.insert(appID)
+                if options.visibleAfterStatusChecks > 0 {
+                    pendingVisible[appID] = options.visibleAfterStatusChecks
+                } else {
+                    _ = visibleApps.insert(appID)
+                }
             }
         }
         return options.confirmsLaunch ? [#"{"event":"ed.apps.launch","data":200}"#] : []
@@ -148,7 +157,15 @@ final class FakeSamsungTV: WebSocketClient, HTTPClient, @unchecked Sendable {
             }
             guard options.reportsAppStatus else { return HTTPResponse(statusCode: 200, data: Data(#"{"id":"\#(id)"}"#.utf8)) }
             let (running, visible) = lock.withLock {
-                (runningApps.contains(id) || options.backgroundApps.contains(id), visibleApps.contains(id))
+                if let remaining = pendingVisible[id] {
+                    if remaining <= 1 {
+                        pendingVisible[id] = nil
+                        _ = visibleApps.insert(id)
+                    } else {
+                        pendingVisible[id] = remaining - 1
+                    }
+                }
+                return (runningApps.contains(id) || options.backgroundApps.contains(id), visibleApps.contains(id))
             }
             return HTTPResponse(statusCode: 200, data: Data(#"{"id":"\#(id)","running":\#(running),"visible":\#(visible)}"#.utf8))
         }

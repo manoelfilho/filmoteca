@@ -16,6 +16,7 @@ public actor SamsungTizenTVController {
     private let replyTimeout: Duration
     private let launchConfirmationTimeout: Duration
     private let launchCheckDelay: Duration
+    private let launchVisibilityTimeout: Duration
     private let restRetryDelay: Duration
 
     /// - Parameters:
@@ -42,6 +43,7 @@ public actor SamsungTizenTVController {
         replyTimeout: Duration = .seconds(5),
         launchConfirmationTimeout: Duration = .seconds(3),
         launchCheckDelay: Duration = .milliseconds(1500),
+        launchVisibilityTimeout: Duration = .seconds(10),
         restRetryDelay: Duration = .seconds(1)
     ) {
         self.webSocketClient = webSocketClient
@@ -51,6 +53,7 @@ public actor SamsungTizenTVController {
         self.replyTimeout = replyTimeout
         self.launchConfirmationTimeout = launchConfirmationTimeout
         self.launchCheckDelay = launchCheckDelay
+        self.launchVisibilityTimeout = launchVisibilityTimeout
         self.restRetryDelay = restRetryDelay
     }
 
@@ -142,6 +145,22 @@ public actor SamsungTizenTVController {
             if attempt == 1 { try? await Task.sleep(for: restRetryDelay) }
         }
         return false
+    }
+
+    /// Confere o estado do app a cada `launchCheckDelay`, até ele aparecer na tela ou
+    /// passar `launchVisibilityTimeout`. Para antes se a TV não informa o estado.
+    private func waitUntilVisible(_ appID: String, host: String) async throws -> AppStatus {
+        let deadline = ContinuousClock.now + launchVisibilityTimeout
+        var checks = 0
+        while true {
+            try await Task.sleep(for: launchCheckDelay)
+            checks += 1
+            let status = await appStatus(appID, host: host)
+            samsungLog.debug("Estado do app após o pedido pelo canal (\(checks)ª consulta): \(String(describing: status), privacy: .public)")
+            if status == .visible || status == .unknown || ContinuousClock.now >= deadline {
+                return status
+            }
+        }
     }
 
     private func connect(host: String, token: String?, approvalTimeout: Duration?) async throws -> (SamsungTizenSession, String?) {
@@ -249,10 +268,10 @@ extension SamsungTizenTVController: LaunchOnTV {
         }
         if confirmed { return result }
 
-        // Sem confirmação: confere se o app apareceu na tela; se não, abre pela API HTTP.
-        try await Task.sleep(for: launchCheckDelay)
-        let status = await appStatus(app.id, host: host)
-        samsungLog.debug("Estado do app após o pedido pelo canal: \(String(describing: status), privacy: .public)")
+        // Sem confirmação: espera o app aparecer na tela antes de abrir pela API HTTP.
+        // A Netflix pode levar vários segundos para abrir do zero, e abrir de novo pela
+        // API HTTP (sem deep link) no meio disso descartaria o título pedido.
+        let status = try await waitUntilVisible(app.id, host: host)
         if status == .visible {
             return result
         }
