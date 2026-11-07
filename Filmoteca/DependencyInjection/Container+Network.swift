@@ -1,12 +1,12 @@
 import FactoryKit
 import Foundation
 import NetworkCore
+import StreamingAvailabilityNetwork
 import TMDBNetwork
-import WatchmodeNetwork
 
 /// Infraestrutura de rede e provedores de dados concretos.
 ///
-/// Só este arquivo conhece as implementações (Alamofire, TMDB, Watchmode).
+/// Só este arquivo conhece as implementações (Alamofire, TMDB, Streaming Availability).
 /// O resto do app usa as interfaces registradas em `Container+Movies.swift`.
 extension Container {
     var httpClient: Factory<any HTTPClient> {
@@ -39,13 +39,13 @@ extension Container {
         .singleton
     }
 
-    var watchmodeProviderConfiguration: Factory<WatchmodeConfiguration> {
+    var streamingAvailabilityProviderConfiguration: Factory<StreamingAvailabilityConfiguration> {
         self {
-            let api = self.watchmodeConfiguration()
-            return WatchmodeConfiguration(
+            let api = self.streamingAvailabilityConfiguration()
+            return StreamingAvailabilityConfiguration(
                 apiKey: api.apiKey ?? "",
                 baseURL: api.baseURL,
-                // Os filmes do app vêm do TMDB; o Watchmode aceita esses IDs diretamente.
+                // Os filmes do app vêm do TMDB; a API aceita esses IDs diretamente.
                 movieIDFormat: .tmdb,
                 defaultRegion: Locale.current.region?.identifier,
                 timeout: api.timeout
@@ -54,10 +54,10 @@ extension Container {
         .singleton
     }
 
-    var watchmodeStreamingRepository: Factory<WatchmodeStreamingRepository> {
+    var streamingAvailabilityRepository: Factory<StreamingAvailabilityRepository> {
         self {
-            WatchmodeStreamingRepository(
-                configuration: self.watchmodeProviderConfiguration(),
+            StreamingAvailabilityRepository(
+                configuration: self.streamingAvailabilityProviderConfiguration(),
                 client: self.httpClient()
             )
         }

@@ -6,7 +6,8 @@ import TVDomain
 /// Estado da folha "Assistir na TV".
 ///
 /// Junta duas fontes, ambas por interface: onde o filme está (`ListStreamingOffers`,
-/// hoje o Watchmode) e a TV que vai abri-lo (`PairTV`, `LaunchOnTV`..., hoje LG webOS).
+/// hoje o Streaming Availability) e a TV que vai abri-lo (`PairTV`, `LaunchOnTV`...,
+/// hoje LG webOS e Samsung Tizen).
 @Observable
 final class TMDBWatchOnTVViewModel {
     enum OffersState: Equatable {
@@ -183,7 +184,7 @@ final class TMDBWatchOnTVViewModel {
 
     // MARK: - Ofertas
 
-    /// O Watchmode lista o mesmo serviço várias vezes (HD, 4K, aluguel e compra).
+    /// O provedor lista o mesmo serviço várias vezes (HD, 4K, aluguel e compra).
     /// Fica uma por serviço, priorizando o que o usuário já pode assistir.
     static func bestOfferPerService(_ offers: [StreamingOffer]) -> [StreamingOffer] {
         var best: [String: StreamingOffer] = [:]
@@ -212,7 +213,7 @@ extension StreamingOffer.Kind {
         switch self {
         case .subscription: 0
         case .free: 1
-        case .tvProvider: 2
+        case .addon: 2
         case .rent: 3
         case .buy: 4
         }

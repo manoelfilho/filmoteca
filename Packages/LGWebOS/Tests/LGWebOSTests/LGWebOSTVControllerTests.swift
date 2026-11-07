@@ -146,13 +146,14 @@ struct LGWebOSAppResolverTests {
         LGWebOSApp(id: "com.globo.globoplay", title: "Globoplay"),
     ]
 
-    @Test("Nomes do Watchmode encontram o app da TV", arguments: [
+    @Test("Nomes dos serviços de streaming encontram o app da TV", arguments: [
         ("Netflix", "netflix"),
         ("Prime Video", "amazon"),
         ("Amazon Prime", "amazon"),
         ("HBO Max", "com.wbd.stream"),
         ("Globoplay", "com.globo.globoplay"),
         ("Paramount+ (Via Amazon Prime)", "amazon"),
+        ("Paramount+ (Via Prime Video)", "amazon"),
     ])
     func matches(serviceName: String, appID: String) {
         #expect(LGWebOSAppResolver.app(for: serviceName, in: apps)?.id == appID)

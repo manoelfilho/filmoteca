@@ -1,21 +1,19 @@
 import Foundation
 
-/// Configuração do provedor Watchmode.
-public struct WatchmodeConfiguration: Sendable {
+/// Configuração do provedor Streaming Availability (Movie of the Night).
+public struct StreamingAvailabilityConfiguration: Sendable {
     /// De qual catálogo vêm os `MovieID` do app.
     ///
-    /// O Watchmode aceita IDs de outros catálogos, então o app não precisa
-    /// converter nada: basta dizer de onde vêm os IDs.
+    /// A API aceita IDs do TMDB e do IMDb, então o app não precisa converter nada:
+    /// basta dizer de onde vêm os IDs.
     public enum MovieIDFormat: Hashable, Sendable {
-        /// IDs do TMDB (`550`), enviados como `movie-550`. Custa 2 créditos por consulta.
+        /// IDs do TMDB (`550`), enviados como `movie/550`.
         case tmdb
-        /// IDs do IMDb (`tt0137523`). Custa 2 créditos por consulta.
+        /// IDs do IMDb (`tt0137523`), enviados como estão.
         case imdb
-        /// IDs do próprio Watchmode. Custa 1 crédito por consulta.
-        case watchmode
     }
 
-    public static let defaultBaseURL = URL(string: "https://api.watchmode.com/v1")!
+    public static let defaultBaseURL = URL(string: "https://api.movieofthenight.com/v4")!
 
     public var apiKey: String
     public var baseURL: URL
@@ -26,7 +24,7 @@ public struct WatchmodeConfiguration: Sendable {
 
     public init(
         apiKey: String,
-        baseURL: URL = WatchmodeConfiguration.defaultBaseURL,
+        baseURL: URL = StreamingAvailabilityConfiguration.defaultBaseURL,
         movieIDFormat: MovieIDFormat = .tmdb,
         defaultRegion: String? = nil,
         timeout: TimeInterval = 30

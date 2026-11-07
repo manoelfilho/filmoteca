@@ -2,7 +2,7 @@ import Foundation
 
 /// Encontra, entre os apps instalados numa TV, o que corresponde a um serviço de streaming.
 ///
-/// Os nomes variam entre fontes ("Disney Plus" no Watchmode, "Disney+" na TV), por isso a
+/// Os nomes variam entre fontes ("Disney Plus" numa API, "Disney+" na TV), por isso a
 /// comparação ignora maiúsculas, acentos, espaços e trata "+" como "plus". Cada marca
 /// informa os IDs conhecidos dos seus apps para quando o nome não basta.
 public enum TVAppMatcher {

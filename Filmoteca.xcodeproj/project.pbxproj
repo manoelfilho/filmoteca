@@ -12,7 +12,7 @@
 		AA0000000000000000000012 /* NetworkCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000002 /* NetworkCore */; };
 		AA0000000000000000000013 /* TMDBNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000003 /* TMDBNetwork */; };
 		AA0000000000000000000014 /* MoviePersistence in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000004 /* MoviePersistence */; };
-		AA0000000000000000000015 /* WatchmodeNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000005 /* WatchmodeNetwork */; };
+		AA0000000000000000000015 /* StreamingAvailabilityNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000005 /* StreamingAvailabilityNetwork */; };
 		AA0000000000000000000016 /* TVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000006 /* TVDomain */; };
 		AA0000000000000000000017 /* LGWebOS in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000007 /* LGWebOS */; };
 		AA0000000000000000000018 /* SamsungTizen in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000008 /* SamsungTizen */; };
@@ -54,7 +54,7 @@
 				AA0000000000000000000012 /* NetworkCore in Frameworks */,
 				AA0000000000000000000013 /* TMDBNetwork in Frameworks */,
 				AA0000000000000000000014 /* MoviePersistence in Frameworks */,
-				AA0000000000000000000015 /* WatchmodeNetwork in Frameworks */,
+				AA0000000000000000000015 /* StreamingAvailabilityNetwork in Frameworks */,
 				AA0000000000000000000016 /* TVDomain in Frameworks */,
 				AA0000000000000000000017 /* LGWebOS in Frameworks */,
 				AA0000000000000000000018 /* SamsungTizen in Frameworks */,
@@ -103,7 +103,7 @@
 				AA0000000000000000000002 /* NetworkCore */,
 				AA0000000000000000000003 /* TMDBNetwork */,
 				AA0000000000000000000004 /* MoviePersistence */,
-				AA0000000000000000000005 /* WatchmodeNetwork */,
+				AA0000000000000000000005 /* StreamingAvailabilityNetwork */,
 				AA0000000000000000000006 /* TVDomain */,
 				AA0000000000000000000007 /* LGWebOS */,
 				AA0000000000000000000008 /* SamsungTizen */,
@@ -143,7 +143,7 @@
 				AA0000000000000000000022 /* XCLocalSwiftPackageReference "Packages/MovieDomain" */,
 				AA0000000000000000000023 /* XCLocalSwiftPackageReference "Packages/TMDB" */,
 				AA0000000000000000000021 /* XCLocalSwiftPackageReference "Packages/Persistence" */,
-				AA0000000000000000000024 /* XCLocalSwiftPackageReference "Packages/Watchmode" */,
+				AA0000000000000000000024 /* XCLocalSwiftPackageReference "Packages/StreamingAvailability" */,
 				AA0000000000000000000025 /* XCLocalSwiftPackageReference "Packages/TVDomain" */,
 				AA0000000000000000000026 /* XCLocalSwiftPackageReference "Packages/LGWebOS" */,
 				AA0000000000000000000027 /* XCLocalSwiftPackageReference "Packages/SamsungTizen" */,
@@ -572,9 +572,9 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/TMDB;
 		};
-		AA0000000000000000000024 /* XCLocalSwiftPackageReference "Packages/Watchmode" */ = {
+		AA0000000000000000000024 /* XCLocalSwiftPackageReference "Packages/StreamingAvailability" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/Watchmode;
+			relativePath = Packages/StreamingAvailability;
 		};
 		AA0000000000000000000025 /* XCLocalSwiftPackageReference "Packages/TVDomain" */ = {
 			isa = XCLocalSwiftPackageReference;
@@ -622,9 +622,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = MoviePersistence;
 		};
-		AA0000000000000000000005 /* WatchmodeNetwork */ = {
+		AA0000000000000000000005 /* StreamingAvailabilityNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = WatchmodeNetwork;
+			productName = StreamingAvailabilityNetwork;
 		};
 		AA0000000000000000000006 /* TVDomain */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -52,7 +52,7 @@ As notas vêm da comunidade do [TMDB](https://www.themoviedb.org). Cada usuário
 
 - Xcode 26 ou mais novo (alguns recursos visuais usam APIs do iOS 26, com alternativa para versões anteriores)
 - iOS 17 ou mais novo
-- Chaves pessoais e gratuitas do **TMDB** e do **Watchmode**
+- Chaves pessoais e gratuitas do **TMDB** e do **Streaming Availability** (Movie of the Night)
 
 ## 🚀 Começando
 
@@ -63,7 +63,7 @@ O app não vem com chaves. Cada pessoa gera as suas:
 | Serviço | Para que serve | Onde gerar |
 | --- | --- | --- |
 | TMDB | Filmes, notas, gêneros, imagens e onde cada título está disponível | [themoviedb.org/settings/api](https://www.themoviedb.org/settings/api) |
-| Watchmode | Links dos títulos nos serviços de streaming, usados para abrir na TV | [api.watchmode.com](https://api.watchmode.com) |
+| Streaming Availability (Movie of the Night) | Ofertas e links dos títulos nos serviços de streaming, usados para abrir na TV | [movieofthenight.com/about/api](https://www.movieofthenight.com/about/api) |
 
 No TMDB, tanto a **API Key (v3)** quanto o **token de leitura (v4)** funcionam: o app reconhece o token pelo prefixo `eyJ` e o envia como `Authorization: Bearer`.
 
@@ -85,8 +85,14 @@ TMDB_STAGING_KEY=sua_chave_do_tmdb
 TMDB_RELEASE_URL=https:/$()/api.themoviedb.org/3
 TMDB_RELEASE_KEY=sua_chave_do_tmdb
 
-WATCH_MODE_URL=https:/$()/api.watchmode.com/v1
-WATCH_MODE_KEY=sua_chave_do_watchmode
+MOTN_DEBUG_URL=https:/$()/api.movieofthenight.com/v4
+MOTN_DEBUG_KEY=sua_chave_do_movie_of_the_night
+
+MOTN_STAGING_URL=https:/$()/api.movieofthenight.com/v4
+MOTN_STAGING_KEY=sua_chave_do_movie_of_the_night
+
+MOTN_RELEASE_URL=https:/$()/api.movieofthenight.com/v4
+MOTN_RELEASE_KEY=sua_chave_do_movie_of_the_night
 ```
 
 > [!NOTE]
@@ -113,8 +119,8 @@ graph TD
 
     TMDB --> MovieDomain
     TMDB --> NetworkCore
-    Watchmode --> MovieDomain
-    Watchmode --> NetworkCore
+    StreamingAvailability --> MovieDomain
+    StreamingAvailability --> NetworkCore
     Persistence --> MovieDomain
 
     LGWebOS --> TVDomain
@@ -131,7 +137,7 @@ graph TD
 | `TVDomain` | Modelos e protocolos para parear uma TV e abrir conteúdo nela. Guarda o pareamento no Keychain. |
 | `NetworkCore` | Camada de rede genérica (HTTP e WebSocket), sem conhecer nenhuma API. |
 | `TMDB` | Implementação de `MovieDomain` com a API do TMDB. |
-| `Watchmode` | Ofertas de streaming e links por título, com a API do Watchmode. |
+| `StreamingAvailability` | Ofertas de streaming e links por título, com a API Streaming Availability (Movie of the Night). O plano gratuito permite 1.000 consultas por mês. |
 | `Persistence` | Favoritos com SwiftData. |
 | `LGWebOS` | Controle de TVs LG pelo protocolo SSAP (WebSocket). |
 | `SamsungTizen` | Controle de TVs Samsung pela API de controle remoto (WebSocket + HTTP). |
@@ -185,13 +191,13 @@ Cada pacote tem os seus testes:
 cd Packages/TMDB && swift test
 ```
 
-Pacotes com testes: `DesignSystem`, `TMDB`, `Watchmode`, `Persistence`, `TVDomain`, `LGWebOS` e `SamsungTizen`. Os testes de TV usam TVs falsas (`FakeTV`, `FakeSamsungTV`), sem precisar de uma TV de verdade.
+Pacotes com testes: `DesignSystem`, `TMDB`, `StreamingAvailability`, `Persistence`, `TVDomain`, `LGWebOS` e `SamsungTizen`. Os testes de TV usam TVs falsas (`FakeTV`, `FakeSamsungTV`), sem precisar de uma TV de verdade.
 
 ## 🔒 Privacidade
 
-Favoritos, TVs pareadas e o perfil ficam **só no aparelho**. O app não tem servidor próprio nem conta: as consultas vão direto para o TMDB e o Watchmode, e os comandos vão direto para a TV pela rede local.
+Favoritos, TVs pareadas e o perfil ficam **só no aparelho**. O app não tem servidor próprio nem conta: as consultas vão direto para o TMDB e o Streaming Availability, e os comandos vão direto para a TV pela rede local.
 
 ## 🙏 Créditos
 
 Este produto usa a API do TMDB, mas não é endossado nem certificado pelo TMDB.
-Disponibilidade e links de streaming fornecidos pelo [Watchmode](https://www.watchmode.com).
+Disponibilidade e links de streaming fornecidos pela [Streaming Availability API](https://www.movieofthenight.com/about/api), do Movie of the Night.

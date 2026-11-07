@@ -235,13 +235,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Filmoteca is free: no subscription, no ads, no in-app purchases and no sign-up.\n\nAll of its information comes from public third-party APIs:\n• TMDB: movies, ratings, genres, images and which services carry each title.\n• Watchmode: each title's links on the streaming services, used to open the movie on your TV.\n\nTo use these APIs, each person must generate their own access key by creating a free account on each service's website, and set it in the Filmoteca project before building the app. Keys are personal and subject to each provider's limits and rules. Watchmode's free plan, for example, allows a limited number of requests per month, and some direct links are reserved for paid plans.\n\nBecause the data comes from these services, it may be incomplete, out of date or vary by country. Filmoteca uses the TMDB API but is not endorsed or certified by TMDB."
+            "value" : "Filmoteca is free: no subscription, no ads, no in-app purchases and no sign-up.\n\nAll of its information comes from public third-party APIs:\n• TMDB: movies, ratings, genres, images and which services carry each title.\n• Streaming Availability (Movie of the Night): each title's links on the streaming services, used to open the movie on your TV.\n\nTo use these APIs, each person must generate their own access key by creating a free account on each service's website, and set it in the Filmoteca project before building the app. Keys are personal and subject to each provider's limits and rules. Streaming Availability's free plan, for example, allows 1,000 requests per month.\n\nBecause the data comes from these services, it may be incomplete, out of date or vary by country. Filmoteca uses the TMDB API but is not endorsed or certified by TMDB."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O Filmoteca é gratuito: não tem assinatura, anúncios nem compras dentro do app, e não pede cadastro.\n\nTodas as informações vêm de APIs públicas de terceiros:\n• TMDB: filmes, notas, gêneros, imagens e em quais serviços cada título está disponível.\n• Watchmode: os links de cada título nos serviços de streaming, usados para abrir o filme na TV.\n\nPara usar essas APIs, cada pessoa precisa gerar a sua própria chave de acesso, criando uma conta gratuita no site de cada serviço, e configurá-la no projeto do Filmoteca antes de compilar o app. As chaves são pessoais e seguem os limites e as regras de cada provedor. No plano gratuito do Watchmode, por exemplo, há um número limitado de consultas por mês, e alguns links diretos ficam restritos aos planos pagos.\n\nComo os dados vêm desses serviços, eles podem estar incompletos, desatualizados ou variar de acordo com o país. O Filmoteca usa a API do TMDB, mas não é endossado nem certificado pelo TMDB."
+            "value" : "O Filmoteca é gratuito: não tem assinatura, anúncios nem compras dentro do app, e não pede cadastro.\n\nTodas as informações vêm de APIs públicas de terceiros:\n• TMDB: filmes, notas, gêneros, imagens e em quais serviços cada título está disponível.\n• Streaming Availability (Movie of the Night): os links de cada título nos serviços de streaming, usados para abrir o filme na TV.\n\nPara usar essas APIs, cada pessoa precisa gerar a sua própria chave de acesso, criando uma conta gratuita no site de cada serviço, e configurá-la no projeto do Filmoteca antes de compilar o app. As chaves são pessoais e seguem os limites e as regras de cada provedor. No plano gratuito do Streaming Availability, por exemplo, são 1.000 consultas por mês.\n\nComo os dados vêm desses serviços, eles podem estar incompletos, desatualizados ou variar de acordo com o país. O Filmoteca usa a API do TMDB, mas não é endossado nem certificado pelo TMDB."
           }
         }
       }
@@ -315,13 +315,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Favorites, paired TVs and your profile (name and photo) are stored only on this device. Filmoteca has no server of its own and no account: searches go straight to the TMDB and Watchmode APIs, and TV commands go straight to the TV over your local network."
+            "value" : "Favorites, paired TVs and your profile (name and photo) are stored only on this device. Filmoteca has no server of its own and no account: searches go straight to the TMDB and Streaming Availability APIs, and TV commands go straight to the TV over your local network."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Favoritos, TVs pareadas e o seu perfil (nome e foto) ficam salvos apenas neste aparelho. O Filmoteca não tem servidor próprio nem conta: as buscas vão direto para as APIs do TMDB e do Watchmode, e os comandos para a TV vão direto para ela, pela sua rede local."
+            "value" : "Favoritos, TVs pareadas e o seu perfil (nome e foto) ficam salvos apenas neste aparelho. O Filmoteca não tem servidor próprio nem conta: as buscas vão direto para as APIs do TMDB e do Streaming Availability, e os comandos para a TV vão direto para ela, pela sua rede local."
           }
         }
       }
@@ -1119,18 +1119,18 @@
         }
       }
     },
-    "tmdb_offer_tv_provider" : {
+    "tmdb_offer_addon" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "With TV provider"
+            "value" : "Channel add-on"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Com operadora de TV"
+            "value" : "Canal adicional"
           }
         }
       }

@@ -15,8 +15,8 @@ extension Container {
         self { self.appConfiguration().tmdb }
     }
 
-    var watchmodeConfiguration: Factory<APIConfiguration> {
-        self { self.appConfiguration().watchmode }
+    var streamingAvailabilityConfiguration: Factory<APIConfiguration> {
+        self { self.appConfiguration().streamingAvailability }
     }
 
     /// Idioma do conteúdo pedido às APIs de dados, o mesmo da interface do app.

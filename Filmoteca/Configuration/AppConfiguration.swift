@@ -3,7 +3,7 @@ import Foundation
 struct AppConfiguration {
 
     let tmdb: APIConfiguration
-    let watchmode: APIConfiguration
+    let streamingAvailability: APIConfiguration
 
     init(bundle: Bundle = .main) {
         self.tmdb = APIConfiguration(
@@ -11,9 +11,9 @@ struct AppConfiguration {
             apiKey: bundle.object(forInfoDictionaryKey: "TMDB_KEY") as? String,
             timeout: 30
         )
-        self.watchmode = APIConfiguration(
-            baseURL: Self.url(bundle, key: "WATCH_MODE_URL") ?? URL(string: "https://api.watchmode.com/v1")!,
-            apiKey: bundle.object(forInfoDictionaryKey: "WATCH_MODE_KEY") as? String,
+        self.streamingAvailability = APIConfiguration(
+            baseURL: Self.url(bundle, key: "MOTN_URL") ?? URL(string: "https://api.movieofthenight.com/v4")!,
+            apiKey: bundle.object(forInfoDictionaryKey: "MOTN_KEY") as? String,
             timeout: 30
         )
     }

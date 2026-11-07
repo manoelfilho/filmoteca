@@ -6,12 +6,12 @@
 	<string>${TMDB_URL}</string>
 	<key>TMDB_KEY</key>
 	<string>${TMDB_KEY}</string>
-	<key>WATCH_MODE_URL</key>
-	<string>${WATCH_MODE_URL}</string>
-	<key>WATCH_MODE_KEY</key>
-	<string>${WATCH_MODE_KEY}</string>
+	<key>MOTN_URL</key>
+	<string>${MOTN_URL}</string>
+	<key>MOTN_KEY</key>
+	<string>${MOTN_KEY}</string>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>O SuperApp se conecta à sua TV na rede Wi-Fi para abrir filmes nela.</string>
+	<string>Autorize a conexão com a TV</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsLocalNetworking</key>

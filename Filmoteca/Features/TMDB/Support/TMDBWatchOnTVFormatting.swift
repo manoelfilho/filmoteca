@@ -10,9 +10,9 @@ extension StreamingOffer {
         case .free: String(localized: "tmdb_offer_free")
         case .rent: String(localized: "tmdb_offer_rent")
         case .buy: String(localized: "tmdb_offer_buy")
-        case .tvProvider: String(localized: "tmdb_offer_tv_provider")
+        case .addon: String(localized: "tmdb_offer_addon")
         }
-        let priceText = price.map { $0.formatted(.currency(code: Self.currencyCode(for: region))) }
+        let priceText = price.map { $0.formatted(.currency(code: currency ?? Self.currencyCode(for: region))) }
         return [kindName, priceText ?? quality].compactMap { $0 }.joined(separator: " · ")
     }
 

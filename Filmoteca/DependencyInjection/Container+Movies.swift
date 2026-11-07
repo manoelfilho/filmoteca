@@ -53,7 +53,7 @@ extension Container {
     }
 
     var listStreamingOffers: Factory<any ListStreamingOffers> {
-        self { self.watchmodeStreamingRepository() }
+        self { self.streamingAvailabilityRepository() }
     }
 
     // MARK: - Favoritos (armazenamento local)

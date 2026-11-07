@@ -1,15 +1,16 @@
 // swift-tools-version: 6.0
 import PackageDescription
 
-/// Provedor de dados Watchmode: onde cada filme está disponível e os links para abri-lo.
+/// Provedor de dados Streaming Availability (Movie of the Night): onde cada filme está
+/// disponível e os links para abri-lo.
 ///
 /// Implementa as interfaces de `MovieDomain` usando a rede de `NetworkCore`.
 let package = Package(
-    name: "Watchmode",
+    name: "StreamingAvailability",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        /// Implementação das interfaces de `MovieDomain` usando a API do Watchmode.
-        .library(name: "WatchmodeNetwork", targets: ["WatchmodeNetwork"]),
+        /// Implementação das interfaces de `MovieDomain` usando a API Streaming Availability.
+        .library(name: "StreamingAvailabilityNetwork", targets: ["StreamingAvailabilityNetwork"]),
     ],
     dependencies: [
         .package(path: "../MovieDomain"),
@@ -17,16 +18,16 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "WatchmodeNetwork",
+            name: "StreamingAvailabilityNetwork",
             dependencies: [
                 .product(name: "MovieDomain", package: "MovieDomain"),
                 .product(name: "NetworkCore", package: "NetworkCore"),
             ]
         ),
         .testTarget(
-            name: "WatchmodeNetworkTests",
+            name: "StreamingAvailabilityNetworkTests",
             dependencies: [
-                "WatchmodeNetwork",
+                "StreamingAvailabilityNetwork",
                 .product(name: "MovieDomain", package: "MovieDomain"),
                 .product(name: "NetworkCore", package: "NetworkCore"),
             ]

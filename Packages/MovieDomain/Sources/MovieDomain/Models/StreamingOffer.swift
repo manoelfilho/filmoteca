@@ -10,24 +10,30 @@ public struct StreamingOffer: Identifiable, Hashable, Sendable {
         case free
         case rent
         case buy
-        /// Liberado com login de operadora de TV.
-        case tvProvider
+        /// Canal assinado à parte dentro de outro serviço (ex.: Paramount+ dentro do Prime Video).
+        case addon
     }
 
-    /// Identificador do serviço no provedor de dados.
+    /// Identificador do serviço no provedor de dados. Canais têm um ID próprio,
+    /// diferente do serviço que os hospeda.
     public let serviceID: String
+    /// Nome para exibir. Num canal, indica também o serviço que o hospeda:
+    /// "Paramount+ (Via Prime Video)".
     public let serviceName: String
     public let kind: Kind
     /// País da oferta (ex.: `BR`).
     public let region: String?
     /// Página do filme no site do serviço. É dela que se tira o ID do filme no serviço.
     public let webURL: URL?
-    /// Link que abre o filme direto no app do serviço no iPhone, quando o provedor fornece.
-    public let appURL: URL?
+    /// Link que começa a reprodução direto, quando o provedor fornece.
+    /// Costuma ser um universal link: no iPhone, abre o app do serviço se estiver instalado.
+    public let playURL: URL?
     /// Qualidade (ex.: `HD`, `4K`).
     public let quality: String?
     /// Preço para aluguel ou compra.
     public let price: Decimal?
+    /// Moeda do preço (ISO 4217, ex.: `BRL`).
+    public let currency: String?
 
     public var id: String { "\(serviceID)-\(kind.rawValue)-\(region ?? "")" }
 
@@ -37,17 +43,19 @@ public struct StreamingOffer: Identifiable, Hashable, Sendable {
         kind: Kind,
         region: String? = nil,
         webURL: URL? = nil,
-        appURL: URL? = nil,
+        playURL: URL? = nil,
         quality: String? = nil,
-        price: Decimal? = nil
+        price: Decimal? = nil,
+        currency: String? = nil
     ) {
         self.serviceID = serviceID
         self.serviceName = serviceName
         self.kind = kind
         self.region = region
         self.webURL = webURL
-        self.appURL = appURL
+        self.playURL = playURL
         self.quality = quality
         self.price = price
+        self.currency = currency
     }
 }
